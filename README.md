@@ -51,4 +51,4 @@ As we can see on the plot, the popularity of baby names used for both boys and g
 After that, since 1980, it's increasing a little bit every year. 
 
 ### Conclusion
-To sump up, the initial question was "Does popularity of names given to both sexes evolve consistently", we can provide an answer with the help of the chart. In the past 100 years, we can say that the first 50 years there was a big trend of using the same first name for both boys and girls, and the last 50 years, there was a big drop at the begining but it's growing years after years.
+The initial question was "Does popularity of names given to both sexes evolve consistently", we can provide an answer with the help of the chart. In the past 100 years, we can say that the first 50 years there was a big trend of using the same first name for both boys and girls, and the last 50 years, there was a big drop at the begining but it's growing years after years.
