@@ -37,3 +37,18 @@ The visualization consists of 2 geographic maps of France, one for women names, 
 ### Conclusion
 This visualization allows to see the regional differences in terms of names popularities for both male and female names. It is interactive as we can select specific year as well as specific names.
 
+
+
+## Visualization 3
+
+### Pre-processing
+ 
+First we removed departments, rare firstnames and missing years from the dataset. After we are trying to isolate the first names every year which belongs to a boy and a girl at the same year. The output is like "JOSEPH1900" which mean that in the year 1900 we had some girls called Joseph and boys too.
+We render a dataframe sorted by year with every first names and the sum of baby names used both sex.
+
+### Visualization
+As we can see on the plot, the popularity of baby names used for both boys and girls rised at the end of 1950's. Then we have a sudden drop for like 10 or 20 years.
+After that, since 1980, it's increasing a little bit every year. 
+
+### Conclusion
+To sump up, the initial question was "Does popularity of names given to both sexes evolve consistently", we can provide an answer with the help of the chart. In the past 100 years, we can say that the first 50 years there was a big trend of using the same first name for both boys and girls, and the last 50 years, there was a big drop at the begining but it's growing years after years.
