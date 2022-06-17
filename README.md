@@ -1,6 +1,6 @@
 # IGR204: Babynames mini-project
 
-## Visualization 1
+## Visualization 1 (Tableau)
 ### Pre-processing
  
 Departments have been removed from the dataset to lighten and speed up the table's processing.
@@ -22,6 +22,28 @@ Finally, in the lower right corner, a line plot is presenting the total annual b
 ### Conclusion
 This visualization enables the user to grasp the importance of names through time thanks to the popularity and variablity metrics. It also helps asses theses names overall *weight* in the dataset thanks to the different bar and line plots. Hence, it answers the assignement criteria.
 
+## Visualization 1 (Altair)
+### Pre-processing
+Data cleaning was performed on the following fields:
+- "Department" feature has been removed
+- rows containing "PRENOMS_RARES" for the "preusuel" feature have been deleted
+- rows containing "XXXX" for the "annais" feature have been deleted
+
+Additional features was necessary for the data visualization :
+- a column with the number of baby names in year N-1 for a given first name has been added
+- a column with the rate of change of the number of baby names between years N-1 and N has been added
+
+To avoid confusion in the case of mixed-gender names, the gender information has been added to the name.
+
+### Visualization
+Line plot on the top and bar plot in the lower right corner are similar to ones designed on Tableau software. 
+A bar chart with both positive and negative values has been created to display the rate of change of the number of baby names as a function of the year. 
+On the top right corner, an interactive legend has been added to display graphs only for a specific name.
+Besides, a selection of a temporal range on the charts updates values of the bar plot in the lower right corner.
+
+### Conclusion
+
+This visualization enables the user to show the evolution and the popularity of baby names over time. In particular, the chart with the rate of change allows to highlight a sudden evolution of the number of baby names over the time. Hence, it answers the assignment criteria.
 
 ## Visualization 2
 
