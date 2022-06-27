@@ -49,14 +49,30 @@ Additional features was necessary for the data visualization :
 To avoid confusion in the case of mixed-gender names, the gender information has been added to the name.
 
 #### Description
-Line plot on the top and bar plot in the lower right corner are similar to ones designed on Tableau software. 
-A bar chart with both positive and negative values has been created to display the rate of change of the number of baby names as a function of the year. 
-On the top right corner, an interactive legend has been added to display graphs only for a specific name.
-Besides, a selection of a temporal range on the charts updates values of the bar plot in the lower right corner.
+We recommend selecting less than 10 names for a better readability of the graphs.
+
+The visualization consists of 3 charts : 
+- Graph 1 : for each of the selected names, the line plot on the top represents the total number of babies that were given that name each year
+- Graph 2 : the bar chart on the bottom left corner shows the year over year change rate on the number of births for a given name. 
+- Graph 3 : the bar chart on the bottom right corner displays the cumulative sum of the selected names on a given time frame.
+
+The display can be filtered by selecting a time window (e.g. 1950 - 1970) and/or by selecting a specific name on the interactive legend on the top right corner. 
+
+When a time window is selected on graph 1 or 2, the cumulative sum of the selected names on graph 3 will be automatically updated. 
+
+If the user selects a name on the interactive legend, the year over year change rate for that name will be displayed on graph 2. In addition, the selected name will be highlighted on the line plot  on graph 1 and the bar plot on graph 3.
+
 
 #### Conclusion
 
-This visualization enables the user to show the evolution and the popularity of baby names over time. In particular, the chart with the rate of change allows to highlight a sudden evolution of the number of baby names over the time. Hence, it answers the assignment criteria.
+The visualization shows the evolution and the popularity of names over time.
+
+For instance, we display graphs for the following names : Bastien, Clément, Guillaume, Julien and Lucas. 
+According to the graph, we can observe :
+- Guillaume and Julien were popular names between 1970 and 1995 in comparison with others. These names are unpopular nowadays
+- Lucas became a popular name in 90's and remain quite popular nowadays
+- Guillaume was suddenly unpopular name in 1997
+
 
 ## Visualization 2 (Altair)
 
