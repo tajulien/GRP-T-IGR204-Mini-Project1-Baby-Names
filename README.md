@@ -8,24 +8,32 @@ On the other hand, the bigger flexibility of Altair allows for a nicer dashboard
 ### Tableau version
 #### Pre-processing
  
-Departments have been removed from the dataset to lighten and speed up data processing.
-Names that appear only once in the dataset have been added to *Rare_Names*.
-The gender information has been added to the name, to avoid confusion in the case of mixed-gender names.
+- Departments have been removed from the dataset to speed up data processing.
+- Names that appear only once in the dataset have been added to *Rare_Names*.
+- All names that appear at least twice in the dataset (ie for two different years) have been dupplicated in order to have one entry (with zero births if the entry is created) every year. This makes the dataset much bigger but was necessary for some Tableau aggregations to work properly.
+- The gender information has been added to the name, to avoid confusion in the case of mixed-gender names.
 
 #### Description
-In the lower left corner, a **bar plot** presents at the same time the **sum of births and the total birth percentage agregated over all years for which the Dashboard is filtered**. This plot helps order names by importance over a giver time period (the names are presented in decreasing order).
-Two cursors ("Name popularity" and "Popularity variability") help explore names in this bar plot.
-When opening the Dashboard, only 5 names are displayed, but the filter on the right permits to select all names and thus fully use these cursors to explore.
+First of all, a slider ("Year"), located in the center-right of the dashboard, enables to filter out a specific time range between 1900 and 2020. It applies to all subplots within this dashboard.
 
-As usual, the **temporal evolution** of each name is presented through a **line plot**. We can observe the evolution either in terms of annual birth count or in percentage of this count.
-The two cursors mentionned above unfortunately do not operate on the **line plot**. Thus, it is advised to start using the cursors on the bar plot and then filter the line plot from the bar plot.
-In any case, it is possible to filter the line plot through a second filter (Checkbox) in the top right corner.
-Beware, if too many names are displayed on this plot, it becomes unreadable. Furthermore, the quantity of data might induce latency. Therefore, it is recommanded to always filter the data for this plot.
+In the lower left corner, a **bar plot** displays for each name the **sum of births and the percentage of births** over the filtered time period. Names on this plot are ordered by importance (ie descending sum or births). Two **sliders** ("Name popularity" and "Popularity variability") help exploring the names displayed in this bar plot. These sliders and bar plot combined allow users to answer the following questions :
+- Are there names that have consistently remained popular or unpopular?  (using "Name popularity" slider)
+- Are there some that have were suddenly or briefl y popular orunpopular ? (using "Popularity variability" slider)
 
-Finally, in the lower right corner, a line plot is presenting the total annual births and the annual birth of the selected names. The total count of births over the period and the gender details are displayed to the right of this line plot.
+When opening the Dashboard, only 5 names are displayed (names from our group), but a checkox filter based on names, located on the right, allows to select all names and thus fully explore the dataset.
+
+The **temporal evolution** of each name is presented through a **line plot**. We can observe the evolution either in terms of **annual births** or in **percentage of yearly births**.  
+The two sliders mentionned above ("Name popularity" and "Popularity variability") unfortunately do not operate on the line plot (the reason for this is that these sliders are based on LOD expressions that are not as easy to manipulate as classic filters).  Consequently, the way to proceed is to start using the sliders with the bar plot and then filter the line plot using a brush on the bar plot.  
+A checkbox filter on names, located in the top right corner of the dashboard, enables the user to select the names to be displayed on the line plot. By default, only the names of our group members are selected. Beware, if too many names are displayed on this plot, it becomes unreadable and the amount of data might induce latency. Therefore, it is recommended to always filter out the data for this plot (either with a brush on the bar plot or with the checkbox filter).  
+This line plot and filtering tools combined allow users to answer the following questions :
+- How do baby names evolve over time?
+- Are there trends in time?
+
+In the lower right corner, a line plot is displaying the evolution of the total annual births (all names included) as well as the evolution of the sum of annual births of the selected names only.  
+Finally, the total sum of births over the period, aggregated by gender, is displayed just above the previously mentionned line plot.
 
 #### Conclusion
-This visualization enables the user to grasp the importance of names through time thanks to the popularity and variablity metrics. It also helps asses theses names overall *weight* in the dataset thanks to the different bar and line plots. Hence, it answers the assignement criteria.
+The popularity and variablity sliders are the key features that enable relevant data exploration, thus meeting the homework criteria. Neverthless, user experience could still be improved by linking all subplots and sliders more directly, but we haven't found a way to do so.
 
 ### Altair version
 #### Pre-processing
