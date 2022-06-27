@@ -52,7 +52,7 @@ To avoid confusion in the case of mixed-gender names, the gender information has
 We recommend selecting less than 10 names for a better readability of the graphs.
 
 The visualization consists of 3 charts : 
-- Graph 1 : for each of the selected names, the line plot on the top represents the total number of babies that were given that name each year
+- Graph 1 : for each of the selected names, the line plot on the top represents the total number of babies that were given that name each year.
 - Graph 2 : the bar chart on the bottom left corner shows the year over year change rate on the number of births for a given name. 
 - Graph 3 : the bar chart on the bottom right corner displays the cumulative sum of the selected names on a given time frame.
 
@@ -69,9 +69,9 @@ The visualization shows the evolution and the popularity of names over time.
 
 For instance, we display graphs for the following names : Bastien, Clément, Guillaume, Julien and Lucas. 
 According to the graph, we can observe :
-- Guillaume and Julien were popular names between 1970 and 1995 in comparison with others. These names are unpopular nowadays
-- Lucas became a popular name in 90's and remain quite popular nowadays
-- Guillaume was suddenly unpopular name in 1997
+- Guillaume and Julien were popular names between 1970 and 1995 in comparison with others. These names are unpopular nowadays.
+- Lucas became a popular name in 90's and remain quite popular nowadays.
+- Guillaume was suddenly unpopular name in 1997.
 
 
 ## Visualization 2 (Altair)
